@@ -13,10 +13,27 @@ int main(){
         cout << "\nEnter seconds : ";
         cin >> s;
         if ( h < 24 && m<60&&s<60){
-            err++
+            err++;
         }else{
             cout << "Enter the correct time !! (OwO)";
-            system(cis);
+            system("cls");
+        }
+        while(a == 0){
+            system("cls");
+            cout << h <<':'<< m <<':'<< s << endl;
+            Sleep(1000);
+            s++;
+            if(s>59){
+                s = 0;
+                m++;
+            }
+            if(m>59){
+                m = 0;
+                h++;
+            }
+            if(h>24){
+                h=0;
+            }
         }
     }
     return 0;

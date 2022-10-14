@@ -4,7 +4,7 @@
 a simple analog clock created in cpp and works on 24hrs time system
 
 
-##usage 
+## usage 
 
 
 first compile it using any cpp compiler (like g++ )
